@@ -1,0 +1,1 @@
+latex2html --split 0 --nosubdir --nonavigation --noinfo -noaddress index.tex

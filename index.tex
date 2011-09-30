@@ -1,0 +1,675 @@
+\documentclass[12]{article}
+\usepackage{html}
+\pagestyle{empty}
+
+\begin{document}
+\begin{center}
+\Large
+Computational Mechanics Brown-Bag Seminar
+\end{center}
+
+\begin{itemize}
+\item[Time:] Wednesdays, 12:00-1:00
+
+\item[Place:] CHL 244 (CHL Classroom)
+
+\item[Purpose:] The computational mechanics brown-bag seminar is an
+  opportunity to present and discuss topics related to the computer
+  simulation of fluid and solid mechanics. Talks should be informal
+  and from 20 to 50 minutes in length. Questions/polite interruptions
+  are encouraged. Topics may include, but are not limited to,
+  technical issues from ongoing research, completed work, tutorials on
+  advanced computational methods, or presentations of classical papers
+  that have been cited at least 100 times.  At irregular intervals,
+  prizes will be awarded for least colorful presentation, best \LaTeX
+  slide, and poorest handwriting.
+
+\item[Mailing List:] To subscribe to our email list,
+  \htmladdnormallink{click here}{http://lst.usace.army.mil/majordomosubunsub.htm}
+  and select ls-cms.
+
+\item[Information:] If you would like to give a presentation, please send a title, abstract, and date to Collin.A.Vaughan@usace.army.mil.
+
+
+\end{itemize}
+
+
+\begin{center}
+\Large
+Upcoming talks
+\end{center}
+
+\begin{center}
+\Large
+Year 2011
+\end{center}
+
+\begin{enumerate}
+
+\item[Jun 15]Lessons learned from hurricane Katrina and IPET\\Bruce Ebersole (CHL)\\
+
+
+\item[Sept 14]Stabilized Approximation to Degenerate Transport Problems via Filtering\\Lea Jenkins (Clemson University)\\
+We analyze a stabilization technique for advection-dominated
+flow problems.  Of particular interest are coupled parabolic/hyperbolic
+problems, when the diffusion coefficient is zero in part of the domain. 
+For certain discretization methods, the unstabilized, computed
+approximations of these problems are highly oscillatory, and several
+techniques have been proposed and analyzed to mitigate the effects of the
+subgrid errors that contribute to the oscillatory behavior.  In this
+paper, we modify a time-relaxation algorithm proposed by Adams and Stolz
+in 2002 and further studied in Ervin, Layton, and Neda in 2007.  Our
+modification introduces the relaxation operator as a post-processing step.
+The operator is not time-dependent, so the discrete (relaxation) system
+need only be factored once.  We discuss convergence results for the
+algorithm and present numerical results for several model problems.
+
+\end{enumerate}
+
+\begin{center}
+\Large
+Prior talks
+\end{center}
+
+\begin{center}
+\Large
+Year 2011
+\end{center}
+
+\begin{enumerate}
+
+\item[Apr 27]Computational Geometry Algorithms Library (CGAL)\\GoogleTechTalk by Andreas Fabri (Geometry Factory) and Sylvain Pion (INRIA)\\
+\\
+From www.cgal.org: The Computational Geometry Algorithms Library (CGAL), offers data structures and algorithms like triangulations(2D constrained triangulations and Delaunay triangulations in 2D and 3D, periodic triangulations in 3D), Voronoi diagrams (for 2D and 3D points, 2D additively weighted Voronoi diagrams, and segment Voronoi diagrams),polygons (Boolean operations, offsets, straight skeleton), polyhedra (Boolean operations), arrangements of curves and their applications (2D and 3D envelopes, Minkowski sums), mesh generation (2D Delaunay mesh generation and 3D surface and volume mesh generation, skin surfaces), geometry processing (surface mesh simplification, subdivision and parameterization, as well as estimation of local differential properties, and approximation of ridges and umbilics), alpha shapes, convex hull algorithms (in 2D, 3D and dD), search structures (kd trees for nearest neighbor search, and range and segment trees), interpolation (natural neighbor interpolation and placement of streamlines), shape analysis, fitting, and distances (smallest enclosing sphere of points or spheres, smallest enclosing ellipsoid of points, principal component analysis), and kinetic data structures.
+
+\item[Apr 13]Mpi4py and Petsc4py: Using Python to develop Scalable PDE Solvers\\Lisandro Dalcin\\Centro Int. de Metodos Computacionales en Ingeniera\\(Presented by Chris Kees)\\
+\\
+PETSc is a suite of routines and data structures for the
+scalable (parallel, MPI-based) solution of scientific applications
+modeled by PDEs. PETSc for Python (aka petsc4py)
+is a Cython-based wrapper to PETSc components like distributed
+vectors and matrices, Krylov-based linear solvers,
+Newton-based nonlinear solvers, and basic timesteppers.
+petsc4py facilitates the Cython/SWIG/f2py wrapping of
+C/C++/Fortran codes using PETSc. New mechanisms are
+being worked on to cross language boundaries and easily
+employ Python as an extension language.
+
+\item[Apr 6]Matlab Routines for 2D Mesh Generation and Mesh Quality Evaluation\\Chris Massey (CHL)\\
+
+\item[Mar 30]Applications of Peskin's Immersed Boundary Method\\ John Chrispell (Tulane University) \\
+Many fluids are non-Newtonian and exhibit viscoelastic responses.
+Examples include: food products like egg whites, and molten chocolate,
+biological
+fluids such as mucus and blood, as well as industrial materials like
+paint, adhesives, and polymers. Here we discuss recent results obtained
+using an immersed boundary framework to study the interaction between
+immersed elastic structures and surrounding viscoelastic fluids.
+
+\item[Mar 29 {\bf (***TUESDAY at 10:30*** --- CHL Conference Room (Building 3200, Room 200))}]High resolution modeling of urban and coastal flood inundation:
+  data resources, unstructured meshing and resistance parameters. \\ Jochen Schubert (UC Irvine) \\
+  Urbanized landscapes are at the forefront of current research
+  efforts in the field of flood inundation modeling for two major
+  reasons. First, urban areas hold a large amount of economic and
+  social importance and as such it is imperative to protect them from
+  flood related damage. Secondly, global changes of climatic patterns
+  and sea level rise, combined with overdevelopment of watersheds and
+  decay of ageing water retention and flood protection structures are
+  increasing their risk of flooding. Flood inundation models are being
+  developed to reliably forecast flow directions, velocities and
+  depths of flood waters across a flooded site during a modeled flood
+  event, with potential applications in urban planning and emergency
+  response operations. However, modeling urban landscapes is not a
+  trivial task since they consist of a multitude of geometrically
+  complex features that are challenging to characterize within a
+  computer modeling environment. Model parameterization has to capture
+  site conditions such as preferential flow paths, drainage networks
+  and surface dependent resistances to flow and often fine resolution
+  geospatial data layers are required to capture enough detail to
+  resolve said parameters at a meaningful level.
+
+  This presentation will address advances in the design and
+  parameterization of unstructured meshes for computationally
+  efficient, fine resolution flood inundation modeling of urban
+  environments at risk of flooding. Land-locked and coastal sites are
+  presented along with necessary and available data to parameterize
+  each scenario. Datasets for parameterization will range from
+  offshore bathymetry to bay/river soundings, regional topography to
+  local embankments and channels as well as buildings footprints and
+  road network geometries. Findings will be presented based on the
+  combined effects of mesh resolution, building and feature
+  representation as well as landcover resistance parameterization on
+  flood predictions for urbanized environments.
+
+\item[Mar 23]USACE Reachback Experiences in Providing Support for International Hydrologic Emergencies\\ Mark Jourdan (CHL) \\
+  The U.S. Army Corps of Engineers Reachback Operations Center (UROC)
+  provides a ``reachback'' engineering capability that allows
+  Department of Defense (DoD) personnel deployed worldwide to talk
+  directly with experts in the United States when a problem in the
+  field needs quick resolution. Deployed troops can be linked to
+  subject matter experts within the Corps of Engineers, private
+  industry, and academia to obtain detailed analysis of complex field
+  problems. UROC staff members respond to incoming information
+  requests such as flooding potential due to dam breaches; riverine
+  flooding, river crossing operations, camp placement and other
+  hydraulic/hydrologic evaluations.  This capability was initiated
+  after support to the U.S. Army in crossing the Sava River in
+  December 1995.  Since 1995, the UROC has grown to provide support
+  fro not only hydraulic/hydrologic support, but also structural,
+  geotechnical and environmental support to DoD personnel.  This
+  presentation will discuss assorted hydrologic emergencies that UROC
+  personnel have supported.  Lessons learned and approaches used will
+  be discussed, as well as recommendations for future efforts in the
+  discipline.
+
+\item[Mar 16]Algorithms and Methods for Discrete Mesh Repair\\David McLaurin (MSU)\\
+Computational analysis and design has become a fundamental part of product research, development, and manufacture in aerospace, automotive, and other industries.  In general the success of the specific application depends heavily on the accuracy and consistency of the computational model used.  The aim of this work is to reduce the time needed to prepare geometry for mesh generation.  This will be accomplished by developing tools that semi-automatically repair discrete data.  Providing a level of automation to the process of repairing large, complex problems in discrete data will significantly accelerate the grid generation process.  The developed algorithms are meant to offer semi-automated solution to a complicated geometrical problem — specifically discrete mesh intersection.
+The intersection-repair strategy presented here focuses on repairing the intersection in-place as opposed to re-discretizing the intersecting geometries.  Combining robust, efficient methods of detecting intersections and then repairing intersecting geometries in-place produces a significant improvement over techniques used in current literature.  The result of this intersection process is a non-manifold, non-intersecting geometry that is free of duplicate and degenerate geometry.  Results are presented showing the accuracy and consistency of the intersection repair tool.
+
+\item[Feb 7 {\bf (***MONDAY***)}]Numerical and Reduced Order Asymptotic Modeling of Nonlinear Deep-Water Ocean Surface Waves\\ Matt Malej (New Jersey Institute of Technology) \\ In this talk I will discuss the development of an accurate and efficient numerical model for a short-term prediction of evolving nonlinear ocean waves, including extreme waves such as ``Rogue'' waves. Due to their elusive nature, the media often portrays Rogue waves as unimaginatively huge and unpredictable monsters of the sea. To address these concerns we derived several asymptotic models based on the small wave steepness assumption, as well as relatively weak transverse dependence, and their corresponding numerical simulations via Fourier pseudo-spectral methods have been carried out. 
+The derived models will be compared to the well-known Modified Nonlinear Schroedinger Equation (MNLS) of Trulsen and Dysthe (1996) for the evolution of the envelope of wave-trains. Motivated by their spectral evolution, the stability of a weakly nonlinear wave-train on deep water subject to three-dimensional modulations is investigated. Preliminary results on the validity of the MNLS and the computational advantages of our models will be discussed.
+
+\item[Feb 2 {\bf (**Keulegen Room**)}]An outline of finite element methods for civil and environmental engineering, part 2\\Chris Kees (CHL)\\
+The finite element method is a powerful approach for computing approximate solutions to partial differential equations, particularly when the equations are defined on complex domains and/or have highly variable coefficients. In the first talk of this series I presented some of the standard tools for dealing with partial differential equations including weak derivatives, the weak formulation, and Sobelev spaces. We finished with the abstract Ritz-Galerkin method for approximating solutions over a finite dimensional subspace of the infinite dimensional solution space. We saw that this solution has the Galerkin orthogonality and that the Ritz-Galerkin approximation is a kind of projection of the solution onto a finite dimensional subspace. In this talk I will show how to construct finite dimensional subspaces using the finite element method. We will cover some standard cell types and polynomial basis functions for constructing the solution representation on cells as well as the effect of constraints on inter-cell continuity.
+
+\item[Jan 26] How to use the CMB to create and analyze 3D ADH
+  groundwater and heat transport simulations\\Amanda Hines (ITL)\\ The
+  Computational Model Builder is a suite of tools designed to help
+  modelers create and initialize domains as well as analyze the
+  results of their simulations. The CMB currently consists of 5 tools:
+  PointsBuilder, SceneBuilder, ModelBuilder (which contains
+  SimBuilder), MeshViewer, and ParaView. I will be presenting the
+  current capabilities of the tools with respect to generating 3D ADH
+  groundwater and heat transport domains. I will try to cover:
+\begin{itemize}
+\item Processing large scatter point datasets
+\item TIN stitching
+\item Well/veg/rock placements
+\item Tagging of elements and nodes on large domains
+\item Generating bc files for ADH (including material and boundary condition assignment)
+\item Mesh quality
+\item Reclassification of material IDs in a mesh
+\item Analyzing simulation results in ParaView 
+\end{itemize}
+I will cover additional capabilities, such as the specialized 2D
+tools, in a second presentation later this year.
+
+\item[Jan 18 {\bf (***TUESDAY***)}] An outline of finite element methods for civil and
+  environmental engineering, part 1\\ Chris Kees (CHL) \\ 
+The finite element method is a powerful approach for computing
+approximate solutions to partial differential equations, particularly
+when the equations are defined on complex domains and/or have highly
+variable coefficients. Since complex domains and heterogeneous
+materials are the rule rather than the exception in civil and
+environmental engineering, it makes sense for ERDC to invest in finite
+element methods both through development of in-house expertise and in-house
+software tools. In this first part of a series of informal talks on
+the finite element method I will try to present the basic framework of
+finite element methods for a second-order parabolic system of equations, which is
+the type of partial differential equation derived for the large
+majority of models in civil and environmental engineering. This first
+part is intended as a refresher for those with some prior exposure
+to finite elements and a background in real analysis and linear
+algebra. Later parts will look at applications to problems across ERDC
+and open issues in the development of finite element methods and
+software.
+
+\item[Jan 12] Open meeting on 2011 seminar topics
+
+\end{enumerate}
+
+\begin{center}
+\Large
+Year 2010
+\end{center}
+
+\begin{enumerate}
+
+\item[Jan 27] Very large scale integrated hydrologic, hydraulic, and
+groundwater modeling\\ Aaron Byrd (CHL) \\
+There are many challenges to very large scale models (e.g.
+river basin-sized) that span several states in size. The challenges
+range from data collection and management, conceptual model creation,
+numerical model creation, being able to run and calibrate the model, and
+presenting results in a meaningful way to the stakeholders. Clearly
+there are many significant changes that occur at this scale such as
+urbanization and climate change and so being able to model large areas
+would be beneficial for being able to manage them. This is intended to
+be mostly a discussion of issues as well as how we might go about as a
+group to tackle the problems and begin to model very large areas with
+high levels of resolution. 
+
+\end{enumerate}
+
+\begin{center}
+\Large
+Year 2009
+\end{center}
+
+\begin{enumerate}
+
+\item[Oct 28] Learning Whom to Trust: Using Graphical Models for
+  Learning about
+  Information Providers\\Philip Hendrix (ITL)\\
+  In many multi-agent systems, information is distributed among
+  potential providers that vary in their capability to report useful
+  information and in the extent to which their reports may be biased.
+  This talk describes a series of graphical models for learning about
+  information providers in such settings. It shows how graphical
+  models can be used to (1) simultaneously learn the reporting
+  strategies that agents use and learn their capabilities; (2) weigh
+  the benefits of different combinations of information providers; and
+  (3) calculate the expected error of selecting different combinations
+  of information providers. These models can cope with agents that
+  vary in their capabilities and strategies, and whose capabilities
+  may change over time.
+
+
+\item[July 23] Morphology Modeling, Surface water/Groundwater,etc.\\Prof. Clint Dawson from the University of Texas at Austin\\
+  A short informal seminar on some of his recent work, including modeling shallow water with morphological change using discontinuous Galerkin methods, surface water/groundwater coupling, and parameter estimation.
+
+\item[March 27] ``Wiki For Dummies in GSL''\\ Victoria Moore\\
+  As stated by ``Wikipedia'' a wiki is an online content management program designed to facilitation the collaborative editing of documents through and in-browser text interface, which are them immediately presented as publicly visible web pages.  The use of a wiki in GSL could promote information awareness through an unofficial means to which all can rapidly contribute.  The ``Wiki For Dummies in GSL'' brown bag seminar will cover an introduction to wiki's, adding/editing content, and managing data.  Please note that you need not be a dummy to attend.
+
+\item[March 4] Discussion on local conservation in continuous finite elements\\ Charlie Berger\\
+  Continuous FEM solutions of the conservative form differential equations will be shown to be identical to a finite volume method in which the fluxes at the edge are derived from the interior of each element.  The method then is locally conservative in that the ``mass'' change balances the sum of the fluxes.  The primary example will be of a second order partial differential equation, showing that the fluxes precisely balance the point source.
+
+\item[February 25] A Krylov H2 optimal reduced order modeling technique applied to the two-dimensional linearized shallow water equations: A case study\\Chris Massey\\
+  Over the past few years the US DoD's coastal ocean and riverine
+dynamical system modeling capabilities
+have taken large leaps forward. Direct numerical simulation using
+modeling tools is a standard approach
+and indeed one of the few available means to accurately predict
+environmental features that are influenced
+by riverine and near shore coastal processes. Yet, in the face of finite
+computation resources and limited turn
+around times, there is still a pressing need to reduce the cost of
+evaluation of hydrodynamic models while at
+the same time ensuring appropriate levels of their accuracy. In terms of
+reduced order modeling (ROM),
+hydrodynamic models can be seen as dynamical systems that involve a
+description of how geophysical
+flows evolve both in space and in time. ROM applied to these models is
+very promising and has enormous
+potential in the context of performing ensemble scenarios and data
+assimilation where cost control and
+sustainability of accuracy is critical. The Krylov-based projection
+methods have emerged among the leading
+approaches for model reduction in large-scale settings, producing high
+quality models that satisfy (local)
+optimality conditions, which is critical in retaining confidence in the
+accuracy of the reduced system. The
+linear framework for which this approach to model reduction is optimal
+makes it even more appealing to
+variational data assimilation approaches based on the representer
+method.
+In this talk, we present a case study in which we apply a Krylov H2
+optimal reduced order modeling
+technique, see [1], to the two-dimensional linearized shallow water
+equations.\\References\\
+ \ [1] S. Gugercin, A.C. Antoulas, and C. Beattie, "H2 Model reduction for
+large-scale linear dynamical
+systems," SIAM J. Matrix Anal. Appl., vol. 30, pp. 609-638, 2008.  \\ This is joint work with Christopher Beattie of Virginia Tech and Hans
+Ngodock of the Naval Research Laboratory.
+
+\item[February 11] Godfred Yamoah\\
+  Grid coarsening schemes which ignore stored data at the deleted nodes when
+computing for solutions at the next time step result in mass conservation
+issues. We show the results of two mass conservation schemes which uses all
+stored data (including data at the deleted nodes) and compare them with that
+of the non-conservative method for which data of the deleted nodes are
+ignored. The simulation is a 2 day, vertical infiltration problem. In
+general, there is a loss of mass when the non-conservative method is used.
+
+\end{enumerate}
+
+\begin{center}
+\Large
+Year 2008
+\end{center}
+
+\begin{enumerate}
+
+\item[Dec 31] Christmas Break
+
+\item[Dec 24] Christmas Break
+
+\item[Dec 17] Christmas Break
+
+\item[Dec 11] Model formulations for air/water flow in porous media and related numerical modeling issues.\\ Chris Kees\\
+  Richards' equation is the standard model for variably saturated water flow in the subsurface.  It is notoriously difficult to solve but still the primary continuum model used in hydrology.  ``Full'' two-phase models were developed for modeling oil and water in petroleum reservoirs.  Fast and accurate numerical models exist for certain two-phase flow formulations, but these models are still not widely used in hydrology for air/water flow.  I'll derive three standard model formulations that include compressibility and capillary effects and present some numerical test problems that Matthew Farthing and I have been working on.
+
+
+\item[November 26] Thanksgiving Break
+
+\item[November 19] Setting the Initial Condition and Boundary Conditions for the Countermine Heat Transport Problem\\ Owen Eslinger\\
+  We will discuss and number of cases that I have run in which different values were set for the initial and boundary condition for the Countermine Problem.  All of these tests were performed on a column of soil with a single material.  The steady state solution was determined.  We will discuss the implications of setting this condition incorrectly for the surface heat flux.  We will discuss the ramp up time needed and the implications of not setting this correctly.
+
+\item[November 12] Three-Dimensional Modeling of Problems in Biot Consolidation via a Mixed Least Square Finite Element Method\\ Dr. Parashkevova\\
+  The Biot theory of consolidation, which models fluid-saturated porous elestic media by coupling the equations of elastic materials with those of Darcy flow, is central to the rational analysis of soil mechanics problems.  Application areas include geophysics (wave propagation), geotechnical engineering (soil-deformation problems), and industrial engineering (processing of fluid-solid mixtures).  Despite its importance, the application of the theory in practices is limited due to the difficulty in implementing the theory in numerical analysis codes using standard Galerkin finite element technology.\\
+  The goal of this research is to develop a robust numerical method for Biot Consolidation in three dimensions using a mixed least-square method of approximation.  Previous work demonstrated the method for two dimensional problems.  The method prescribes separate unknowns for displacements and stresses for elasticity and pressures and velocities for Darcy flow.  The approximations for displacements and pressures can be either continuous or discontinuous, with no requirement for compatibility between approximation spaces for displacement/pressure and stress/veloctiy.  The method produces symmetric and positive definite coefficient matrices at variance to standard finite element approximation, which produce symmetric semi-definte matrices for incompressible materials.  The presentation presents mathematical formulations with numerical examples and outlines future developments.  The numerical examples suggest the method is convergent in both displacements/pressure and stresses/velocity.  Significantly, for elasticity the method works at nearly compressible and entirely incompressible limit of material behavior.
+
+\item[October 29] Development tools in the HPC environment\\ Jeff Hensley\\
+  A quick sample of some of the tools available on HPC platforms for debugging, code development, profiling, and optimization.  We will (briefly) debuggers (TotalView), memory debugging tools, profiling (CrayPAT and TAU) with an entertaining excursion into the IEEE standard for binary floating-point arithmetic and a look at the bizarre world of binary NaNs, infinities and assorted exotic creatures.
+
+\item[October 22] Conceptual Model Builder: A Cross-Platform Framework of Tools for Model Creation and Setup\\
+  Amanda Hines\\
+  Numerous discipline-specific numerical models are researched, developed, supported, and maintained by the ERDC.  It is no longer feasible to provide mesh generation, boundary condition assignment, and even visualization capabilities on a single-processor desktop computer as the numerical models are being applied to larger and larger spatial domains.  In order to facilitate these large numerical simulations, the ERDC is developing a cross-platform framework of tools, the Conceptual Model Builder (CMB), for scene generations and initialization.  This talk will describe the requirements, the current status, and future development plans for the CMB.
+
+
+\item[October 15] Isogeometric Analysis of Fluid Flow and Flow-Structure Interaction\\
+  Yuri Bazilevs, University of California at San Diego\\
+  Recently, Isogeometric Analysis has emerged as a new computational
+  technology and as an alternative to the standard finite element
+  method.  Isogeometric analysis improves upon finite elements in the
+  areas of geometric modeling and solution representation. The first
+  instantiation of isogeometric analysis was based upon non-Uniform
+  Rational B-Splines (NURBS), although other alternatives, such as
+  subdivision and T-Splines, are possible and are currently under
+  investigation. Despite its recent emergence, NURBS-based
+  isogeometric analysis has already been applied to many areas of
+  contemporary interest in computational mechanics. These include:
+  fluids and turbulence, solids and thin structures, fluid-structure
+  interaction and, recently, phase-field modeling. Improved geometry
+  and solution approximation properties of NURBS functions has led to
+  superior performance of the isogeometric approach in comparison to
+  standard finite elements in these applications. This presentation
+  focuses on application of isogeometric analysis to wall-bounded
+  turbulent flows, flows about rotating components, and vascular
+  fluid-structure interaction. Basic ideas on how to develop discrete
+  formulations that yield accurate and stable solutions for these
+  applications are presented. Implementation of these ideas within a
+  NURBS-based, large scale computational framework is discussed and
+  computations that demonstrate good performance of the proposed
+  methodology are shown.
+
+\item[October 8] Introduction to multi-scale, multi-physics modeling with PyADH\\
+Chris Kees\\
+ERDC computational modeling research is now focused on
+problems that involve many coupled physical processes which may
+exhibit strong variation at a range of spatial and temporal
+scales. Such multi-physics and multi-scale problems rarely have
+analytical solutions and typically require sophisticated,
+model-specific numerical methods, which may in practice be developed in
+tandem with the mathematical models. Under these conditions, an
+expert system for modeling is not feasible or desirable. Instead,
+we need a flexible collection of tools to support development of
+robust, accurate, and efficient computational models and methods.  In
+this talk I will give an introduction to the design of PyADH, focusing
+particularly on the model application interface and the model
+development interface. To illustrate the interfaces I will give
+examples of multi-scale, multi-physics models that we are developing
+with the tools.
+
+\item[October 1] Fall organizational meeting
+
+\item[August 27] Data storage for computational mechanics\\
+  Chris Kees\\
+  Organizing data and implementing file readers and writers is not
+  something I enjoy, but I end up doing it anyway.  I'll try to
+  explain XML, HDF5, and XDMF, and then present some recent experience
+  that we've had with these formats.  I intend to leave plenty of time
+  for a discussion focused on long term approaches to data storage
+  that we as a group could adopt.
+
+\item[August 20] Plans for a Heat and Mass Transport Model of a Coupled Soil-Root-Stem System\\
+  Jerry Ballard\\
+  This brief presentation will describe the plans for the development
+  of a three-dimensional tool that will simulate the heat and mass
+  tranfer macro-interactions in a soil-root-system(SRSS) in a
+  seasonally varying deciduous forest.  The development of the
+  centimeter-scale SRSS will involve modifying and coupling heat and
+  mass transport tools(such as ADH) capable of reproducing the
+  three-dimensional diurnal internal and external temperatures,
+  internal fluid distribution, and heat flow in the soil, roots, and
+  tree trunks.  Technical challenges of the work include the
+  calculation of the external thermal radiation from the surrounding
+  forest into the SRSS, implementation of multiple thermal
+  conductivity models, and the modeling of the active uptake of water
+  in the soil by the root tissue.
+
+\item[August 13] Two-Equation Turbulence Modeling\\
+  Bob Bernard\\
+  Turbulence is a predominant feature of real fluid flow, and some
+  computational fluid dynamics (CFD) codes assume (by default) that
+  the computed flow is always turbulent.  The range of length scales
+  involved in turbulence is so great, however, that (with existing
+  supercomputers) CFD codes can fully simulate turbulent flow only for
+  Reynolds numbers of a few thousand or less.  For engineering
+  purposes, the most common approach is to employ some kind of
+  turbulence model.
+
+\item[August 6] Reactive Transport (2): A pre-processor for biogeochemistry modeling\\
+  Pearce Cheng\\
+  A general biogeochemical system can be complex and difficult to
+  resolve.  In this talk, we will first identify major difficulties of
+  modeling biogeochemistry.  Then we will introduce a reaction-based
+  pre-processor for biogeochemistry modeling.  An example will be used
+  to show how this pre-processor can systematically decomposes
+  reaction matrix and generates useful biogeochemistry governing
+  equations.
+
+\item[July 30]Ideas for Solving Large Problems with the Countermine Computational Testbed\\
+  Stacy Howington and Owen Eslinger\\
+  This brief talk will (1.)summarize the current state of simulations
+  with the Countermine Computational Testbed (from the User's Group
+  Conference presentation given two weeks ago), (2.) outline the
+  simulation challenge given by our customers, (3.) list our current
+  ideas for enlarging the domains substantially, and (4.) solicit
+  ideas from the audience.
+
+\item[July 9] Reactive Transport (1): Introduction\\
+  Pearce Cheng \\
+  What is reactive transport? We will discuss, biogeochemical
+  reactions (conceptual models), reaction rate experiments, challenges
+  in modeling reactive transport, and reaction rate issues.
+
+\item[July 2] Mesh Manipulation and Air Flow Modeling\\
+  Jeff Allen\\
+  Mesh Manipulation Abstract: The need for realistic three-dimensional
+  computer models of natural streams and rivers, particularly in light
+  of the exorbitant costs associated with typical stream restoration
+  has become a priority for many civil works researchers.
+  Fortunately, the rapid advances and availability of high performance
+  computing resources along with the increased sophistication of both
+  in-house and commercial software have made the creation of such
+  models significantly more tenable. In light of these needs, the
+  objectives for this research include (1) the creation of realistic
+  representations of naturally occurring streambeds from potentially
+  coarse sets of field measurements; (2) the demonstrated capability
+  to freely deform the streambed surface as well as embed complex
+  objects within the surface (rocks, fallen trees, etc.); (3) the
+  ability to successfully mesh the surface and its surrounding volume
+  in accordance with established mesh quality criteria; and (4) obtain
+  sufficiently resolved flow field solutions utilizing HPC resources.
+  Beginning with a coarse set of field data measurements taken from
+  one of four study sites along a 1.5-mile stretch along the Robinson
+  Restoration project of the Merced River, California, for each
+  objective stated, the respective challenges, solution strategies,
+  and resulting outcomes are demonstrated. Flow field solutions are
+  conducted using parallelized finite element/volume solvers.
+
+  Air Flow Abstract: ADH is evaluated for its potential for solving
+  incompressible, laminar air flow over several test case
+  applications, including the flat plate at zero incidence, stationary
+  cylinder, and the 10m x 10 m countermine terrain.  Comparisons with
+  exact solutions, experimental, and the Fluent solver are shown.
+
+\item[June 25] i-SciDat: An Ontology-Based Design for Scientific Data
+  Storage \\
+  Amanda Hines \\
+  Over the past few years computer simulations have gained wider
+  acceptance as viable alternatives to field testing. Due to this
+  recognition, the numbers of simulations and types of simulations
+  have increased significantly. This increase in computational
+  modeling has produced the need for access to large amounts of data
+  in a short amount of time. Also, it is not uncommon for data
+  requirements to change at any moment, especially in a research
+  environment such as the US Army Engineer Research and Development
+  Center (ERDC). The ERDC recognized the need for a centralized,
+  scientific data repository. It was essential for this repository to
+  be easily accessible to users and flexible enough to handle the
+  range of data required by the modelers.
+
+  This presentation will discuss the repository, iSciDat, which has
+  been created to address these issues at the ERDC. At the design
+  stage and throughout the implementation of iSciDat, modelers were
+  contacted to provide input about the process. Initially, these
+  modelers were from the groundwater and surface-water fields. Based
+  on their input, the repository's initial functionality was to store
+  soil properties. After obtaining a list from the modelers, these
+  properties were generated inside iSciDat. However, due to the
+  evolving nature of research, the list has grown and will continue to
+  grow. The best-equipped people to add or change these properties are
+  the modelers themselves. This presented a dilemma since most
+  modelers are not database experts. Therefore, the repository had to
+  be created with enough flexibility that the modelers could easily
+  manage the data definitions and relationships on their own. With
+  this as the major driving force for design, we determined that an
+  ontology-based repository was the best option. Ontologies provide
+  the flexibility and hierarchical structure needed for this
+  environment. This implementation of the repository allows modelers
+  full control of their data storage without the daily need of a
+  database manager and it also provides accessibility to store and
+  retrieve data through the Internet. This presentation will discuss
+  in depth the design rationale and implementation for the ERDC
+  repository iSciDat.
+
+\item[June 18]
+Diverse Applications of the PAR3D Numerical Flow Model\\
+Phu Luong and Bob Bernard
+
+\item[June 13] Implicit Filtering \\
+  Tim Kelley\\
+  Many problems in optimal design are nonsmooth, nonconvex, and have
+  internal iterations that may fail to converge. Traditional
+  gradient-based optimization methods do poorly when confronted with
+  these problems, often failing completely or finding an unacceptable
+  local minimum. Implicit filtering is a sampling method. Sampling
+  methods address these problems by only evaluating the function at
+  each stage and then responding to the history of the optimization by
+  targeting new points. Implicit filtering constructs a difference
+  gradient, reduces the difference increment as the optimization
+  progresses, and constructs a quadratic model with a quasi-Newton
+  method. In this talk we will discuss the fundamental ideas of the
+  method, the implementation, and an application to a problem in water
+  resources policy.
+
+
+
+\item[June 4] Optimization of Parameter Estimation in Groundwater Models Using Proper Orthogonal Decomposition (POD)\\
+  Corey Winton\\
+  We are solving inverse problems in groundwater
+  modeling. Given values of hydraulic head at discrete locations, we
+  seek to approximate values of hydraulic conductivity for the entire
+  field.  When using ADH, extreme run-times prohibit the frequent
+  function calls needed for parameter estimation for large, complex
+  problems. Proper Orthogonal Decomposition (POD) is a method to
+  reduce the size of the problem to calibrate ADH, reducing the number
+  of full function calls needed. We will introduce the problem,
+  discuss POD and how it is used, and demonstrate the accuracy of the
+  POD solution compared to the full ADH solution.  If time permits, we
+  will also discuss the current implementation of POD inside of ADH
+  and where improvements could be made.  This is work done in
+  conjunction with Tim Kelley, NCSU.
+
+\item[May 28] Automated Mesh Generation for the Countermine Problem: Issues and Challenges\\
+Owen Eslinger\\
+As part of an ongoing effort to improve automated target recognition
+algorithms for remote sensing technologies, a suite of closely coupled
+numerical simulators has been developed. This platform includes
+high-resolution thermal and moisture transport finite element models,
+coupled with solar and vegetation models. It is well suited for the testing
+of specific scenes with controlled environmental conditions, in particular
+meteorological and time-of-day conditions, which otherwise might be
+difficult and time consuming to reproduce in the field. However, this suite
+serves as a complement to, rather than a replacement for, field and
+laboratory testing of remote sensors.
+
+These numerical simulations require the rapid and robust production of
+finite element meshes of the shallow subsurface for the moisture and thermal
+codes. The meshes need to include natural and man-made objects to achieve
+realism and relevancy, e.g., rocks. This work will focus on the mesh
+generation process, which has been accomplished by taking advantage of
+open-source (black-box) mesh generation software and a post-process, mesh
+smoothing technique to ensure quality elements in the final tetrahedral
+mesh. In addition, the process allows for the inserted objects to be either
+buried, flush with, or protruding from the ground surface. A simple mesh
+repair operation around the objects is utilized to avoid poorly shaped
+tetrahedra in these regions. When desired, subsurface soil regions can be
+assigned as an additional post-process step. This ability extends to
+statistically generated soil distributions using site-specific information
+obtained from soil samples. The meshing software produced for this work has
+been used and is available on a variety of HPC platforms.
+
+\item[May 21] Building and Using a Macroscopic Network Model of Heterogeneous Porous Media\\
+Stacy Howington 
+
+\item[May 7] Testing ADH Unsaturated Flow Simulations Using Analytical
+Solutions \\
+Fred Tracy
+
+\item[April 23] \htmladdnormallink{Mixed methods on the cheap (sometimes)}{talks/Farthing-4-23-08}\\
+Matthew Farthing
+
+\item[April 16] \htmladdnormallink{Some thoughts on the homogenization of granular media}{talks/Peters-4-16-08}\\
+John Peters
+
+\item[April 2 \& 9] \htmladdnormallink{Subversion, python, and other occult practices.}{talks/Kees-4-2-08}\\
+Chris Kees
+
+\item[Mar 26] \htmladdnormallink{Discrete element methods: the answer  to the granular media problem?}{talks/Peters-3-26-08}\\
+  John Peters
+
+\item[Mar 19] Conservative transport in heterogeneous porous media:  non-local theory and
+network modeling.\\
+Stacy Howington
+
+\item[Mar 12] \htmladdnormallink{Modeling Time Dependent Viscoelastic Fluid Flow Using a Fractional Step
+$\theta$-method.}{talks/Chrispell-3-12-08} \\
+John Chrispell (Clemson University)\\
+The accurate numerical approximation of viscoelastic fluid flow poses two
+difficulties: the large number of unknowns in the approximating algebraic
+system (corresponding to velocity, pressure, and stress), and the
+different mathematical types of the modeling equations. An appealing
+approximation approach is to use an operator splitting method which
+decouples the conservation of momentum equation from the constitutive
+equation. This split reduces the size of the linear systems that need to
+be solved and separates the parabolic and hyperbolic equations into
+different substeps. In this presentation, we describe the approximation 
+method for the viscoelastic modeling equations, present numerical
+simulations, and give a-priori error estimates.
+
+\item[Mar 5] \htmladdnormallink{The trouble with granular media.}{talks/Peters-3-5-08}\\
+  John Peters
+
+\item[Feb 27] \htmladdnormallink{Calculating locally conservative velocity fields using discontinuous enrichment and other non-conforming finite elements.}{talks/Farthing-2-27-08}\\
+  Matthew Farthing \\
+  
+  One serious deficiency of standard Galerkin finite element methods
+  for flow modeling is that velocity fields obtained from
+  differentiation of pressure fields are discontinuous at element
+  boundaries. I'll present some recently developed local
+  postprocessing schemes and a non-conforming finite element method
+  that provide so-called locally conservative velocity fields. The
+  resulting approaches maintain the basic flexibility and appeal of
+  traditional finite element methods, while controlling nonphysical
+  oscillations and producing element-wise mass-conservative velocity
+  fields. 
+
+\item[Feb 20] \htmladdnormallink{Conservative level set methods for incompressible air/water flow.}{talks/Kees-2-20-08}\\
+  Chris Kees\\
+  Standard level set methods do not conserve volume in incompressible
+  multi-phase flows. The conservation errors are the result of
+  describing the interface using the level set description and are not
+  associated with any particular discretization. Since conservation
+  errors accumulate over time to produce qualitatively incorrect
+  simulations, this issue is very important. Several authors have
+  tried to address it by using hybrid level set/volume of fluid and
+  hybrid level set/particle tracking approaches. I'll present a method
+  for correcting the level set to make it conserve volume or mass that
+  is defined as the solution of a nonlinear variational problem and
+  applies to general unstructured finite element methods.
+
+\end{enumerate}
+\end{document}
